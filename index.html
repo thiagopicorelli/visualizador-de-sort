@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<title>Visualizador de Sorts</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>Visualizador de Sorts</header>
+		
+		<p> Selecione o Algoritmo: </p>
+		
+		<form id="sorts">
+			<input type="radio" id="Seleção" name="sortName" value="Seleção">
+			<label for="Seleção"> Seleção </label>	
+			
+			<input type="radio" id="Inserção" name="sortName" value="Inserção">
+			<label for="Inserção"> Inserção </label>	
+		</form><br/>
+	
+		<button type="button" onclick="iniciarVisualizador()">Iniciar</button><br/><br/>	
+		
+		<div id="visualizador">
+			<div id="0" class="caixa">2</div>
+			<div id="1" class="caixa">0</div>
+			<div id="2" class="caixa">1</div>
+			<div id="3" class="caixa">3</div>
+			<div id="4" class="caixa">4</div>
+			<div id="5" class="caixa">5</div>
+			<div id="6" class="caixa">6</div>
+		</div>
+		
+		<script src="script.js"> Javascript necessário para o visualizador funcionar </script>		
+		
+		<br/><br/>		
+	
+	</body>
+
+
+</html>
