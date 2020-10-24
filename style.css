@@ -1,4 +1,5 @@
-body {
+html, body {
+	width:100%;
 	text-align:center;
 	font-family:sans-serif;
 }
@@ -7,18 +8,23 @@ header {font-size:4em}
 p {font-size:1.2em}
 button {font-size:1em}
 
-#visualizador {}
+label{display:inline-block}
+
+#Slider {width: 50%}
+#visualizador {white-space:nowrap}
 
 .caixa {
 	display:inline-block;
-	background-color:green;
+	background-color:red;
 	margin-left:auto;
 	margin-right:auto;
-	height:15vh;
-	width:15vh;
+	height:10vw;
+	width:10vw;
 	
-	font-size:15vh;
-	line-height:15vh;
+	font-size:10vw;
+	line-height:100%;
 	font-weight: bold;
 	color:white;
 }
+
+

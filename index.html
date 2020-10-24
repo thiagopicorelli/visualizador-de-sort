@@ -1,40 +1,61 @@
 <!DOCTYPE HTML>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
 <html>
-	<head>
-	<title>Visualizador de Sorts</title>
-	<link rel="stylesheet" href="style.css">
+	<head>	
+		<title>Visualizador de Sorts</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
+		
 		<header>Visualizador de Sorts</header>
 		
 		<p> Selecione o Algoritmo: </p>
 		
 		<form id="sorts">
+			<label for="Seleção"> 
 			<input type="radio" id="Seleção" name="sortName" value="Seleção">
-			<label for="Seleção"> Seleção </label>	
+			Seleção </label>	
 			
+			<label for="Inserção"> 
 			<input type="radio" id="Inserção" name="sortName" value="Inserção">
-			<label for="Inserção"> Inserção </label>	
+			Inserção </label>
+			
+			<label for="MergeSort"> 
+			<input type="radio" id="MergeSort" name="sortName" value="MergeSort">
+			MergeSort </label>
+			
+			<label for="QuickSort">
+			<input type="radio" id="QuickSort" name="sortName" value="QuickSort">
+			QuickSort </label>
+			
+			<label for="ShellSort">
+			<input type="radio" id="ShellSort" name="sortName" value="ShellSort">
+			ShellSort </label>
+			
+			<label for="HeapSort">
+			<input type="radio" id="HeapSort" name="sortName" value="HeapSort">
+			HeapSort </label>
 		</form><br/>
-	
-		<button type="button" onclick="iniciarVisualizador()">Iniciar</button><br/><br/>	
+		
+		<input type="range" id="Slider" min="0" max="1000" value="500" oninput="updateSleepTime(this)"><br/>
+		<span id="sliderValue">500</span>ms<br/><br/>
 		
 		<div id="visualizador">
-			<div id="0" class="caixa">2</div>
-			<div id="1" class="caixa">0</div>
-			<div id="2" class="caixa">1</div>
-			<div id="3" class="caixa">3</div>
-			<div id="4" class="caixa">4</div>
-			<div id="5" class="caixa">5</div>
-			<div id="6" class="caixa">6</div>
-		</div>
+			<div id="0" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="1" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="2" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="3" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="4" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="5" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+			<div id="6" class="caixa" style="color:white;background-color:red" onclick="editarNumero(this)"></div>
+		</div>	
+		<script src="script.js" charset="utf-8"> Javascript necessário para o visualizador funcionar </script><br/><br/>	
 		
-		<script src="script.js"> Javascript necessário para o visualizador funcionar </script>		
+		<button type="button" id="iniciar" onclick="iniciarVisualizador(this)">Iniciar</button><br/><br/>	
+		<button type="button" id="resetar" onclick="resetar()">Resetar</button><br/><br/>			
 		
-		<br/><br/>		
-	
 	</body>
 
 
