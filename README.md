@@ -1,3 +1,3 @@
 # Visualizador de Sorts
 
-Um visualizador de alguns algoritmos de sorteio, rodando em javascript.
+Um visualizador de alguns algoritmos de ordernação, rodando em javascript.
